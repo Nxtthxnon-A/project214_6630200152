@@ -1,0 +1,42 @@
+.html,body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .background-netflix {
+    background-color: #141414;
+    height: 100vh; /* ใช้ min-height หากต้องการให้ยืดหยุ่น */
+    width: 100vw; /* ใช้ min-width หากต้องการให้ยืดหยุ่น */
+    min-height: 100vh; /* รับประกันว่าสูงเต็มหน้าจอ */
+    min-width: 100vw; /* รับประกันว่ากว้างเต็มหน้าจอ */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed; /* ติดตรึงไว้ที่หน้าจอ */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* รับประกันว่าอยู่ด้านบน */
+    overflow: hidden; /* ป้องกันการล้น */
+  }
+  
+  img {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    width: 40%; /*origin 40% before 45 %*/
+    cursor: pointer;
+  }
+  img.show {
+    opacity: 1;
+  }
+  img.expand {
+    width: 45%;
+    transition-delay: 2.5s;
+  }
+  img.expand-hide {
+    transition: transform 1.4s ease-in-out, opacity 1.4s ease-in-out; /* ทำให้ transform + opacity มี transition */
+    transform: scale(3); /* ขยายใหญ่ขึ้น 2 เท่า */
+    opacity: 0; /* ค่อยๆ หายไป */
+  }

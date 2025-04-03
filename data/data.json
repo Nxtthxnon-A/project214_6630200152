@@ -1,0 +1,63 @@
+{
+  "student": [
+    {
+      "id": "6630200152",
+      "name": "Nutthanon Atakhan",
+      "OldHighschool": "Phanthongsabhachanupathum School",
+      "University": "Kasetsart University sriracha campus",
+      "Educationlevels": "Bachelor Degree",
+      "Studentstatus": "นิสิตปัจจุบัน",
+      "Degreename": "Bachelor of Science (Computer Science)",
+      "major": "Computer Science",
+      "year": 3,
+      "credit": "61",
+      "Gpa": "2.98",
+      "Address": "Thailand Chonburi Phanthong",
+      "Gmail": "Nutthanon.at@ku.th"
+    }
+  ],
+  "Subjects": [
+    {
+      "id": "0148221",
+      "Subject": "Database",
+      "Credit": 3,
+      "Gpa": "A"
+    },
+    {
+      "id": "0148232",
+      "Subject": "Algorithm Design and Analysis",
+      "Credit": 3,
+      "Gpa": "A"
+    },
+    {
+      "id": "0148234",
+      "Subject": "Programming Internet of Things",
+      "Credit": 3,
+      "Gpa": "A"
+    },
+    {
+      "id": "0148236",
+      "Subject": "Operating Systems",
+      "Credit": 3,
+      "Gpa": "A"
+    },
+    {
+      "id": "0148261",
+      "Subject": "Fundamentals of Artificial Intelligence",
+      "Credit": 3,
+      "Gpa": "A"
+    },
+    {
+      "id": "01355103",
+      "Subject": "English for Job Opportunities",
+      "Credit": 3,
+      "Gpa": "A"
+    },
+    {
+      "id": "0148214",
+      "Subject": "Practicum in Software Development",
+      "Credit": 1,
+      "Gpa": "A"
+    }
+  ]
+}
