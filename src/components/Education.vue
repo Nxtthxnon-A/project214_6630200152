@@ -110,9 +110,14 @@ export default {
 
     async updateSubject() { // อัปเดตข้อมูล subject
       const method = this.isNewSubject ? 'POST' : 'PATCH';
+      let url = 'http://localhost:3000/Subjects';
+
+      if (!this.isNewSubject && this.editedSubject.id) { // อัพเดทเฉพาะเมื่อมี ID
+          url += `/${this.editedSubject.id}`;
+      }
 
       try {
-        const response = await fetch(`http://localhost:3000/Subjects/${this.editedSubject.id}`, {
+        const response = await fetch(url, {
           method: method,
           headers: {
             'Content-Type': 'application/json',
